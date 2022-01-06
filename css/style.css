@@ -19,15 +19,15 @@ a, p {
 }
 
 body{
-   background-color: #171717;
+   background-color: #171717;   
+   padding: 0 100px;
 }
 
 nav {
    display: flex;
    align-items: center;
-   margin-top: 50px;
+   margin: 50px 0 50px 0;
    height: 80px;
-   padding: 0 100px;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
@@ -92,3 +92,107 @@ nav {
 .login .sign-up {
    color: #E44003;
 }
+
+/* header */
+.header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.detail{
+   max-width: 500px;
+   align-self: center;
+}
+
+.detail h2 {
+   font-size: 3em;
+   text-transform: capitalize;
+}
+
+.detail > p {
+   line-height: 1.5;
+}
+
+.caption {
+   margin-bottom: 50px;
+}
+
+hr.line {
+   margin: 50px 0 50px 0;
+   border: 1px solid #464444;
+}
+
+.text-italic {
+   font-style: italic;
+   color: #464444;
+}
+
+.more-detail {
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 600;
+   color: #F9B234;
+   margin-top: 50px;
+}
+
+.more-detail:hover {
+   cursor: pointer;
+}
+
+.more-detail::before{
+   content: '';
+   width: 120%;
+   height: 8px;
+   border-radius: 5px;
+   background-color: #f9b1341e;;
+   position: absolute;
+   top: 8px;
+   left: -10%;
+}
+
+.more-detail i{
+   font-size: .6em;
+   margin-left: 20px;
+}
+
+.detail-img {
+   position: relative;
+   max-width: 500px;
+}
+
+.detail-img img {
+   width: 100%;
+}
+
+.detail-img button {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+   text-transform: uppercase;
+   bottom: -10px;
+   right: -10px;
+   position: absolute;
+   background-color: #E44003;
+   border: none;
+   padding: 15px 30px;
+   width: 200px;
+}
+
+.detail-img button,
+.detail-img button p{
+   color: #fff;
+}
+
+.detail-img button i {
+   font-size: 2.5em;
+}
+
+
+.detail-img span {
+   display: block;
+   text-align: end;
+}
+
