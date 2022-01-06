@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h2, h3 {
+   font-family: 'Playfair Display', serif;
+   color: #fff;
+}
+
+a, p {
+   font-family: 'Open Sans', sans-serif;
+   color: #A6A6A6;
+}
+
+body{
+   background-color: #171717;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   margin-top: 50px;
+   height: 80px;
+   padding: 0 100px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.nav-menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+
+.nav-menu {
+   list-style: none;
+}
+
+.nav-menu img {
+   width: 70px;
+   height: 70px;
+}
+
+.nav-menu a {
+   text-decoration: none;
+}
+
+.nav-menu a.active{
+   position: relative;
+   color: #fff;
+}
+
+.nav-menu a.active::after{
+   content: '';
+   position: absolute;
+   bottom: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 5px;
+   height: 5px;
+   background-color: #fff;
+   border-radius: 50%;
+}
+
+.login {
+   display: flex;
+   flex: 1;
+   justify-content: end;
+   list-style: none;
+}
+
+.login a {
+   display: block;
+   text-decoration: none;
+}
+
+.login li:first-child {
+   margin: 0 50px;
+}
+
+.login .sign-in {
+   color: #fff;
+}
+
+.login .sign-up {
+   color: #E44003;
+}
